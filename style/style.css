@@ -1,0 +1,175 @@
+body {
+  font-family: "Noto Sans TC", sans-serif;
+  margin: 0;
+  max-width: 1296px;
+  margin: 0 auto;
+}
+
+.header {
+  border-bottom: 1px solid #ddd;
+  padding: 1rem 2rem;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-nav {
+  display: flex;
+  gap: 48px;
+}
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.main-nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+.breadcrumb ul {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  font-size: 14px;
+  color: #666;
+}
+
+.product-list-container {
+  display: flex;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.sidebar {
+  width: 200px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 16px 0;
+  color: #000;
+}
+.sidebar li a {
+  text-decoration: none;
+}
+
+.sidebar li.active a {
+  color: #57a203;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.products {
+  flex: 1;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: #f5f5f5;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.product-img {
+  width: 100%;
+  height: auto;
+}
+
+.product-title {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.product-price {
+  color: #555;
+}
+
+.pagination {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.pagination li {
+  list-style: none;
+}
+
+.pagination li a {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ccc;
+  text-decoration: none;
+  color: #000;
+}
+
+.pagination li.active a {
+  background: #000;
+  color: #fff;
+}
+
+.member-promo {
+  background: #d8ff9c;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.member-promo button {
+  background: #000;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border: none;
+  margin-left: 1rem;
+}
+
+.footer {
+  background: #f9f9f9;
+  padding: 2rem;
+  font-size: 14px;
+  color: #212529;
+}
+
+.footer span {
+  font-weight: bold;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-top ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  color: #000;
+}
+
+.footer-top ul li a {
+  text-decoration: none;
+  color: #212529;
+}
+
+.footer-bottom {
+  margin-top: 1rem;
+  text-align: center;
+  color: #aaa;
+}
