@@ -17,7 +17,6 @@
 
 .product-images img {
   width: 100%;
-  border-radius: 8px;
 }
 
 .product-info {
@@ -27,8 +26,26 @@
 
 .breadcrumb {
   color: #888;
-  font-size: 14px;
-  margin-bottom: 8px;
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.breadcrumb ul {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.breadcrumb li::after {
+  content: "/";
+  margin-left: 8px;
+  color: #ccc;
+}
+
+.breadcrumb li:last-child::after {
+  content: "";
 }
 
 .product-name {
@@ -60,9 +77,16 @@
   margin-top: 20px;
 }
 
+.size-select {
+  margin-bottom: 8px;
+}
+
 .color-select .colors .color {
   border: 0;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
 }
 .colors,
 .sizes {
@@ -70,25 +94,34 @@
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 8px;
+  background-color: #fff;
+}
+
+.sizes button {
+  background-color: #fff;
+  border-color: #dee2e6;
+  padding: 12px 24px 12px 24px;
+  border-radius: 5px;
+}
+
+.sizes .active {
+  border-color: #212529;
 }
 
 .color img {
-  width: 32px;
-  height: 32px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
+  width: 64px;
+  height: 64px;
 }
 
-.color.active img {
-  border: 2px solid black;
+.color label {
+  line-height: 1.5;
+  color: #6c757d;
+  margin-top: 4px;
 }
 
 .sizes button {
   padding: 6px 12px;
-  border: 1px solid #ccc;
-  background: white;
   cursor: pointer;
-  border-radius: 4px;
 }
 
 .stock-alert {
@@ -121,14 +154,20 @@
   color: white;
 }
 
+.product-details {
+  margin-top: 32px;
+}
+
 .product-details h4 {
   margin-top: 20px;
   font-weight: bold;
+  line-height: 1.5;
 }
 
 .product-details p {
   margin-top: 6px;
   color: #555;
+  line-height: 1.5;
 }
 
 .probably-like {
