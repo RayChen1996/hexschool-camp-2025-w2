@@ -38,7 +38,7 @@
 }
 
 .product-price .now {
-  color: #c00;
+  color: #57a203;
   font-weight: bold;
   font-size: 20px;
 }
@@ -46,12 +46,13 @@
 .product-price .old {
   text-decoration: line-through;
   margin-left: 12px;
-  color: #999;
+  color: #adb5bd;
 }
 
 .product-desc {
   margin: 16px 0;
-  color: #444;
+  color: #212529;
+  line-height: 1.5;
 }
 
 .color-select,
@@ -59,6 +60,10 @@
   margin-top: 20px;
 }
 
+.color-select .colors .color {
+  border: 0;
+  cursor: pointer;
+}
 .colors,
 .sizes {
   display: flex;
@@ -87,8 +92,9 @@
 }
 
 .stock-alert {
-  color: red;
+  color: #d74f4f;
   font-size: 14px;
+  line-height: 1.5;
   margin-top: 8px;
   display: inline-block;
 }
@@ -96,7 +102,7 @@
 .product-actions {
   display: flex;
   gap: 12px;
-  margin: 24px 0;
+  margin-top: 48px;
 }
 
 .favorite-btn,
@@ -107,6 +113,7 @@
   cursor: pointer;
   border-radius: 4px;
   font-size: 16px;
+  width: 50%;
 }
 
 .cart-btn {
@@ -122,4 +129,15 @@
 .product-details p {
   margin-top: 6px;
   color: #555;
+}
+
+.probably-like {
+  margin: 48px 0 48px 0;
+}
+
+.probably-like h2 {
+  font-weight: 700;
+  font-style: 24px;
+  line-height: 1.2;
+  margin-bottom: 16px;
 }
